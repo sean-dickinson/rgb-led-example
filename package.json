@@ -13,7 +13,7 @@
     "css-build": "node-sass --omit-source-map-url sass/mystyles.scss dist/css/custom.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch",
-    "uglify": "uglifyjs -o dist/script.js  --compress --mangle -- script.js"
+    "uglify": "uglifyjs script.js -o dist/script.min.js  -c -m toplevel --verbose"
   },
   "author": "",
   "license": "ISC"
