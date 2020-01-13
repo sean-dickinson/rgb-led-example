@@ -10,9 +10,10 @@
     "uglify-js": "^3.0.0"
   },
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/custom.css",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss dist/css/custom.css",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "start": "npm run css-watch",
+    "uglify": "uglifyjs -o dist/script.js  --compress --mangle -- script.js"
   },
   "author": "",
   "license": "ISC"
