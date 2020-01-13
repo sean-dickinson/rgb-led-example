@@ -1,0 +1,19 @@
+{
+  "name": "rgb-led",
+  "version": "1.0.0",
+  "description": "rgb led demo page",
+  "main": "sass/mystyles.scss",
+  "dependencies": {},
+  "devDependencies": {
+    "bulma": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "uglify-js": "^3.0.0"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/custom.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

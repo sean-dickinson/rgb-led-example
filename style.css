@@ -1,0 +1,21 @@
+body {
+    margin:0;
+    height: 100vh;
+}
+
+.LED {
+    width: 5em;
+    height: 5em;
+    border-radius: 2.5em;
+    border: 1px black solid;
+    background: black;
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.controls {
+    margin-top: 2em;
+}
